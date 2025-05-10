@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+        <script src="/script.js" type="module"></script>
+    </head>
+    <body>
+        <h1>Welcome, <%= user %>!</h1>
+        <p data-id="peer"></p>
+        <button id="call-button">Start Call</button>
+
+        <form>
+            <input name="peerId" type="text" />
+            <button>join a call</button>
+        </form>
+    </body>
+</html>
